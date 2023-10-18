@@ -96,9 +96,9 @@ VALUES
 ('Cream 1',5),('Cream 2',5),('Cream 3',5),('Cream 4',5),('Cream 5',5);
 
 
-DROP PROCEDURE IF EXISTS insertRowsTocustomers;
+DROP PROCEDURE IF EXISTS insertRowsTo_customers;
 DELIMITER //  
-CREATE PROCEDURE insertRowsTocustomers()   
+CREATE PROCEDURE insertRowsTo_customers()   
 BEGIN
 DECLARE i INT DEFAULT 2; 
 WHILE (i <= 150) DO
@@ -120,7 +120,7 @@ END;
 //  
 DELIMITER ;
 
-CALL insertRowsTocustomers();
+CALL insertRowsTo_customers();
 SELECT * FROM customers;
 
 

@@ -12,9 +12,9 @@ PRIMARY KEY (id)
 
 SELECT * FROM student_data;
 
-DROP PROCEDURE IF EXISTS insertRowsTostudent_data;
+DROP PROCEDURE IF EXISTS insertRowsTo_student_data;
 DELIMITER //  
-CREATE PROCEDURE insertRowsTostudent_data()   
+CREATE PROCEDURE insertRowsTo_student_data()   
 BEGIN
 DECLARE i INT DEFAULT 1; 
 WHILE (i <= 15) DO
@@ -25,5 +25,5 @@ END;
 //  
 DELIMITER ;
 
-CALL insertRowsTostudent_data();
+CALL insertRowsTo_student_data();
 SELECT * FROM student_data;
